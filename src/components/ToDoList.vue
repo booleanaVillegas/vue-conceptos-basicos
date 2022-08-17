@@ -22,14 +22,12 @@ export default {
   methods: {
     onListItemClick(task) {
       task.isDone = !task.isDone;
-      console.log(this.tasks);
+    
     },
     onListHover(task) {
-      console.log("Encima de la tarea " + task.name);
       this.showInstuctions = true;
     },
     onListLeave(task) {
-      console.log("Encima de la tarea " + task.name);
       this.showInstuctions = false;
     },
   },
