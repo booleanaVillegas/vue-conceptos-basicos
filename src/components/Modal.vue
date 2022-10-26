@@ -22,6 +22,7 @@ export default {
     },
     methods: {
         cerrarModal() {
+            console.log('triggereado')
             this.$emit('close')
         }
     },

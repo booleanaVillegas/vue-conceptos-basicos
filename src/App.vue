@@ -39,9 +39,9 @@ export default {
 
   <main>
     <ToDoList />
-    <button @click="openModal1"> Abrir modal 1 </button>
-    <button @click="openModal2"> Abrir modal 2 </button>
-    <Modal titleColor="blue" :showButton="true" title="Hola soy un modal 1" v-if="showModal1" @close="closeModal1">
+    <button id="btn-1" @click="openModal1"> Abrir modal 1 </button>
+    <button id="btn-2" @click="openModal2"> Abrir modal 2 </button>
+    <Modal id="modal-1" titleColor="blue" :showButton="true" title="Hola soy un modal 1" v-if="showModal1" @close="closeModal1">
     <h2> Un subtitulo</h2>
     <p> Lorem ipsum dolor sit amet <a href="/"> consectetur adipisicing elit. </a>  Aperiam dolorem blanditiis inventore. Illo repellat nulla sequi amet quisquam perferendis mollitia quibusdam illum molestiae,
      adipisci repudiandae nostrum doloremque animi vero impedit?</p>
@@ -49,7 +49,7 @@ export default {
       <a class="link1" href="">twitter</a><br><a class="link2" href="">facebook</a><br><a class="link1" href="">linkedin</a>
     </template>
     </Modal>
-    <Modal :titleColor="purpleTitle"  :showButton="true" title="Hola soy un modal 2" v-if="showModal2" @close="closeModal2">
+    <Modal id="modal-2" :titleColor="purpleTitle"  :showButton="true" title="Hola soy un modal 2" v-if="showModal2" @close="closeModal2">
     <template v-slot:links>
       <a href="">twitter</a><a href="">facebook</a><a href="">linkedin</a>
     </template>
